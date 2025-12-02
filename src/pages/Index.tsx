@@ -7,6 +7,8 @@ import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { usePortfolio } from "../context/PortfolioContext";
 import { Loader } from "../components/Loader";
+import { ExpandableScreenDemo } from "../components/ExpandScreen";
+import { LanguageStack } from "../components/LanguageStack";
 
 const Index = () => {
   const { loading } = usePortfolio();
@@ -18,6 +20,8 @@ const Index = () => {
           <main>
             {/* <Test /> */}
             <Hero />
+            {/* <ExpandableScreenDemo/> */}
+            <LanguageStack/>
             <About />
             <Projects />
             <Experience />

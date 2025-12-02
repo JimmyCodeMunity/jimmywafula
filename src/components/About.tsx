@@ -16,7 +16,7 @@ export function About() {
   return (
     <Section
       id="about"
-      className="bg-gradient-to-b from-background to-muted/30"
+      className="bg-transparent from-background to-muted/30"
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeader

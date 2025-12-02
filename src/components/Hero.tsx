@@ -12,7 +12,7 @@ export function Hero() {
   console.log("uploads", portfolio?.uploads);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center  overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float" />
