@@ -73,7 +73,7 @@ export function Experience() {
                   >
                     <motion.div
                       whileHover={{ scale: 1.01 }}
-                      className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg w-full"
+                      className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg"
                     >
                       {/* Header */}
                       <div className="mb-4 sm:mb-6">
