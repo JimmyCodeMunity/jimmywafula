@@ -12,11 +12,11 @@ import { LanguageStack } from "../components/LanguageStack";
 const Index = () => {
   const { loading } = usePortfolio();
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       {!loading ? (
         <>
           <Navigation />
-          <main>
+          <main className="overflow-x-hidden">
             {/* <Test /> */}
             <Hero />
             {/* <ExpandableScreenDemo/> */}
