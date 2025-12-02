@@ -141,11 +141,11 @@ export function About() {
                     View More
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="w-[800px]">
-                  <div className="h-full overflow-y-auto w-full">
-                    <div className="glass rounded-2xl p-8">
-                      <h3 className="text-2xl font-semibold mb-6 text-primary">
-                        Technical Skills
+                <DialogContent className="max-w-[95vw] w-full sm:max-w-[90vw] md:max-w-[85vw] lg:max-w-[1200px] max-h-[90vh]">
+                  <div className="h-full overflow-y-auto w-full max-h-[75vh]">
+                    <div className="glass rounded-2xl p-4 sm:p-6 md:p-8">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-primary">
+                        All Technical Skills
                       </h3>
 
                       {portfolio?.categories.map((category, categoryIndex) => (
@@ -163,13 +163,13 @@ export function About() {
                           <div className="flex items-center gap-2 mb-3">
                             <Badge
                               variant="secondary"
-                              className="text-xs font-medium"
+                              className="text-xs sm:text-sm font-medium"
                             >
                               {category?.name}
                             </Badge>
                           </div>
 
-                          <div className="grid grid-cols-2 gap-3">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                             {category?.skills?.map(
                               (skill: Skill, skillIndex: number) => (
                                 <motion.div
@@ -219,8 +219,12 @@ export function About() {
                       ))}
                     </div>
                   </div>
-                  <DialogFooter>
-                    <DialogClose>Close</DialogClose>
+                  <DialogFooter className="mt-4">
+                    <DialogClose asChild>
+                      <Button variant="outline" className="w-full sm:w-auto">
+                        Close
+                      </Button>
+                    </DialogClose>
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
