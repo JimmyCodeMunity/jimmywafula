@@ -8,32 +8,11 @@ import {
   DialogClose,
   DialogContent,
   DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
 
-const skills = [
-  { name: "HTML", level: 95, category: "Frontend" },
-  { name: "CSS", level: 92, category: "Frontend" },
-  { name: "JavaScript", level: 90, category: "Frontend" },
-  { name: "TypeScript", level: 88, category: "Frontend" },
-  { name: "React", level: 93, category: "Frontend" },
-  { name: "Next.js", level: 85, category: "Frontend" },
-  { name: "React Native", level: 82, category: "Mobile" },
-  { name: "Node.js", level: 87, category: "Backend" },
-  { name: "PHP", level: 80, category: "Backend" },
-  { name: "Laravel", level: 78, category: "Backend" },
-  { name: "Python", level: 85, category: "Backend" },
-  { name: "Django", level: 82, category: "Backend" },
-  { name: "MongoDB", level: 84, category: "Database" },
-  { name: "SQL", level: 88, category: "Database" },
-];
-
-const categories = ["Frontend", "Backend", "Mobile", "Database"];
-
 export function About() {
-  const { loading, portfolio } = usePortfolio();
+  const { portfolio } = usePortfolio();
   return (
     <Section
       id="about"

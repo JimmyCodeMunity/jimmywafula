@@ -10,23 +10,12 @@ import {
   Linkedin,
   Mail,
   MailIcon,
-  MapPin,
-  Phone,
   PhoneIcon,
   Send,
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "../hooks/use-toast";
 import { usePortfolio } from "../context/PortfolioContext";
-
-interface ContactInfo {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-  value: string;
-  href: string;
-  phone: string;
-  email: string;
-}
 
 const socialLinks = [
   {

@@ -5,7 +5,6 @@ import { Experience } from "../components/Experience";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
-import Test from "../components/Test";
 import { usePortfolio } from "../context/PortfolioContext";
 import { Loader } from "../components/Loader";
 

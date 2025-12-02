@@ -8,7 +8,7 @@ export function Hero() {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
-  const { loading, portfolio } = usePortfolio();
+  const { portfolio } = usePortfolio();
   console.log("uploads", portfolio?.uploads);
 
   return (

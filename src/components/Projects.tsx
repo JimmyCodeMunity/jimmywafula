@@ -7,77 +7,8 @@ import { ExternalLink, Github } from "lucide-react";
 import { usePortfolio } from "../context/PortfolioContext";
 import { urlFor } from "../lib/sanityClient";
 
-const projects = [
-  {
-    id: 1,
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-    image: "/api/placeholder/400/250",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description:
-      "Mobile-first task management application built with React Native and Django backend. Real-time updates and team collaboration features.",
-    image: "/api/placeholder/400/250",
-    tags: ["React Native", "Django", "PostgreSQL", "WebSocket"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "Analytics Dashboard",
-    description:
-      "Real-time analytics dashboard with interactive charts and data visualization. Built with Next.js and integrated with multiple APIs.",
-    image: "/api/placeholder/400/250",
-    tags: ["Next.js", "TypeScript", "Chart.js", "API"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "Social Media App",
-    description:
-      "Social networking platform with real-time messaging, post sharing, and user profiles. Features modern UI/UX design.",
-    image: "/api/placeholder/400/250",
-    tags: ["React", "Laravel", "MySQL", "Socket.io"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "AI Content Generator",
-    description:
-      "AI-powered content generation tool using OpenAI API. Features content templates, SEO optimization, and export capabilities.",
-    image: "/api/placeholder/400/250",
-    tags: ["Python", "FastAPI", "OpenAI", "React"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Cryptocurrency Tracker",
-    description:
-      "Real-time cryptocurrency tracking application with portfolio management, price alerts, and market analysis tools.",
-    image: "/api/placeholder/400/250",
-    tags: ["Vue.js", "Node.js", "WebSocket", "Chart.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    featured: false,
-  },
-];
-
 export function Projects() {
-  const { portfolio, loading } = usePortfolio();
+  const { portfolio } = usePortfolio();
   // Provide empty array as fallback if portfolio or projects is undefined
   const featuredProjects = portfolio?.projects?.filter((p) => p.featured) || [];
   const otherProjects = portfolio?.projects || [];

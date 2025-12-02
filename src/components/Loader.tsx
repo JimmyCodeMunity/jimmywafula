@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Download, Mail } from "lucide-react";
-import { Button } from "./ui/button";
+import { ChevronDown } from "lucide-react";
 
 export function Loader() {
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">

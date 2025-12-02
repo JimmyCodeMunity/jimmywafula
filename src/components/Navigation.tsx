@@ -13,7 +13,7 @@ const navigation = [
 ];
 
 export function Navigation() {
-  const { loading, portfolio } = usePortfolio();
+  const { portfolio } = usePortfolio();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
